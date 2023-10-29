@@ -1,0 +1,273 @@
+@import url('https://fonts.cdnfonts.com/css/fredericka-the-great');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020818;
+    margin: 0;
+}
+
+
+#frame1, #frame2, #frame3, #frame4{
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+}   
+#frame5 {
+    width: 80vw;
+    margin: auto;
+    height: 70vh;
+}
+
+.welcome-text{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#title{
+    font-family: 'Fredericka the Great', sans-serif;
+    color: white;   
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+#subtitle {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;  
+}
+#logo{
+    color: white;
+    width: 10vw;
+}
+ 
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    background-color: #020818;
+    opacity: 0.9;
+} 
+
+
+ 
+
+ul{
+    display: flex;
+    flex: 1;    
+    justify-content: center;
+    gap: 8%;
+    align-items: center;
+   
+}
+li{
+    list-style: none;
+    font-size: 1.2em;
+}
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover {
+    text-shadow:
+        0 0 10px rgba(255, 255, 0, 0.5),
+        0 0 20px rgba(255, 255, 0, 0.5),          
+        0 0 30px rgba(255, 255, 0, 0.5),          
+        0 0 40px rgba(255, 255, 0, 0.5),          
+        0 0 50px rgba(255, 255, 0, 0.5);          
+}
+ul:hover a:not(:hover) {
+    color: darkslategrey;
+  }
+
+li a::before{
+    content: '// ';
+}
+#right{
+    width: 10vw;
+}
+
+.circle {
+    box-shadow: inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400, inset -20px 0 30px red, inset 20px 0 300px #ff40d6, inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00, 10px 0 80px #f55;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.title-about{
+    color: white;
+    /* font-size: 2vw; */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+    
+}
+#frame2 img{
+    width: 300px;
+    border-radius: 50%;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 10%;
+    
+}
+
+.description{
+    color: white;
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: lighter;
+    
+}
+.flex-about, .flex-mywork{
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+}
+
+
+.low-img{
+    width:70px;
+    height: 70px
+}
+
+.big-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.big-box-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    gap: 50px; 
+}
+
+
+
+
+.flex-skills-titles{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.flex-skills-box{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 325px;
+    height: 328px;
+    border: 1px solid white;
+    padding: 30px 40px;
+    
+}
+
+
+
+#lap {
+    transform: rotate(-5deg);
+}
+
+.project-tile{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #303841;
+    width: 325px;
+    align-items: baseline;
+  }
+  .project-tile p{
+    color: white;  
+    font-size: 1.5em;
+    margin: 0.5em auto;
+  }
+  .project-tile img{
+    width: 100%;
+  }
+
+
+
+
+#frame7{
+    display: flex; 
+    align-items: center; 
+    max-width: 100vw;
+    height: 30vh;
+    text-align: center;
+    background-color:black;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.flex-logos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.address{
+    color: white;
+    font-size: 1em;
+    font-weight: lighter;
+}
+#logos:hover, .sq-logos-2:hover, .sq-logos:hover{
+    box-shadow:
+        0 0 10px rgba(255, 255, 0, 0.5),
+        0 0 20px rgba(255, 255, 0, 0.5),          
+        0 0 30px rgba(255, 255, 0, 0.5),          
+        0 0 40px rgba(255, 255, 0, 0.5);  
+    width: 40px;
+    height: 40px; 
+}
+#logos:hover {
+    border-radius: 50%;       
+}
+
+.sq-logos:hover{        
+    border-radius: 30%;       
+}
+.sq-logos-2:hover{       
+    border-radius: 20%;       
+}
+@media (max-width: 950px){
+    .flex-about, .flex-mywork{
+        flex-direction: column;
+    }
+    .big-box, .big-box-two{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+   
+    #frame1, #frame2, #frame3, #frame4, #frame5{
+        width: 90vw;
+        margin: auto;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }   
+    li a::before{
+        content: '';
+    }
+    #title{
+        font-size: 4.5em;
+       
+    }
+    #subtitle{
+        font-size: 1.8em;
+    }
+    
+}
